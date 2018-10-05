@@ -11,8 +11,7 @@ module Api
               @clinics = Clinic
                          .within(2, :units => :kms, :origin => [lat, lng])
             end
-
-            render json: @clinics
+            json_response(@clinics)
           end
         end
     end
