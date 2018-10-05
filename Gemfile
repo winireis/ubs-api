@@ -32,6 +32,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'geokit-rails'
 # JSON serializer
 gem 'active_model_serializers', '~> 0.10.0'
+# Pagination
+gem 'will_paginate'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
