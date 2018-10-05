@@ -29,5 +29,5 @@ CSV.foreach(File.join(Rails.root, "db", "ubs.csv"), :headers => true, :encoding 
 		medical_equipment: medical_equipment,
 		medicine: medicine
 	)
-  counter += 1
+
 end
