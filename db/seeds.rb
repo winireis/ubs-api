@@ -5,7 +5,7 @@ score = {
 	"Desempenho acima da média" => 2,
 	"Desempenho muito acima da média" => 3
 }
-counter = 0
+
 CSV.foreach(File.join(Rails.root, "db", "ubs.csv"), :headers => true, :encoding => 'UTF-8') do |row|
 	name = row['nom_estab'].to_s
 	address = row['dsc_endereco'].to_s
@@ -30,5 +30,4 @@ CSV.foreach(File.join(Rails.root, "db", "ubs.csv"), :headers => true, :encoding 
 		medicine: medicine
 	)
   counter += 1
-  puts "#{counter}"
 end
